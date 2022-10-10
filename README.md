@@ -90,10 +90,23 @@ alias ls="logo-ls -D"
 alias ll="logo-ls -lDh"
 ```
 
-## Konsole
+## KDE
+
+### Konsole
 
 ```bash
 cp src/konsole/MoeDark-custom.colorscheme ~/.local/share/konsole
 ```
 
 font: `JetBrainsMono Nerd Font Mono`
+
+### Papyrus icons
+
+[![Github badge](https://img.shields.io/badge/Github-papirus--icon--theme-informational?style=flat&logo=github&logoColor=white&color=blue)](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+[![Github badge](https://img.shields.io/badge/Github-papirus--folders-informational?style=flat&logo=github&logoColor=white&color=blue)](https://github.com/PapirusDevelopmentTeam/papirus-folders)
+
+```bash
+wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/share/icons" sh
+wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
+papirus-folders -C bluegrey --theme Papirus-Dark
+```
